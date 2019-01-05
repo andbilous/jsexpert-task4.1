@@ -19,14 +19,14 @@ function isNumbersEqual(firstNum, secondNum) {
 }
 
 function isBigDifference(firstNum, secondNum) {
-  if (Math.abs(firstNum - secondNum) > 2) {
-    setResult("Большой разброс между костями. Разница составляет : " + Math.abs(firstNum - secondNum) + "<br>")
+  var difference = Math.abs(firstNum - secondNum);
+  if ( difference> 2) {
+    setResult("Большой разброс между костями. Разница составляет : " + difference + "<br>")
   }
-
 }
 
 function calculateResult(firstNum, secondNum) {
-  total = firstNum + secondNum;
+  total += firstNum + secondNum;
 }
 
 function printResult() {
