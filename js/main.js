@@ -35,7 +35,11 @@ function printResult() {
 }
 
 function addResult() {
-  setResult("Победа, вы набрали " + total + " очков")
+  if(total>100){
+    setResult("Победа, вы набрали " + total + " очков")
+  }
+  else setResult("Вы проиграли, у Вас " + total + " очков")
+  
 }
 
 
