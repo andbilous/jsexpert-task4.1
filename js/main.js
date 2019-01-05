@@ -20,7 +20,7 @@ function isNumbersEqual(firstNum, secondNum) {
 
 function isBigDifference(firstNum, secondNum) {
   var difference = Math.abs(firstNum - secondNum);
-  if ( difference> 2) {
+  if (difference > 2) {
     setResult("Большой разброс между костями. Разница составляет : " + difference + "<br>")
   }
 }
@@ -35,11 +35,11 @@ function printResult() {
 }
 
 function addResult() {
-  if(total>100){
+  if (total > 100) {
     setResult("Победа, вы набрали " + total + " очков")
-  }
-  else setResult("Вы проиграли, у Вас " + total + " очков")
-  
+  } else
+    setResult("Вы проиграли, у Вас " + total + " очков")
+
 }
 
 
